@@ -28,7 +28,7 @@ ul li {
 /* HEADER */
 
 header {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   background-color: #fff;
   text-align: center;
 }
@@ -39,10 +39,17 @@ header .main-menu {
 
 header .main-menu li {
   display: inline-block;
+  padding: 20px 10px;
+  transition: background-color 0.3s;
 }
 
 header .main-menu li a {
   color: #000;
+}
+
+header .main-menu li:hover {
+  background-color: #b2e5fc;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -138,5 +145,29 @@ footer img {
   max-width: 100vw;
   display: block;
   margin: 0 auto;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 992px) {
+  body main .cards .card .contenuto-card .card-link {
+    flex-basis: calc((100% / 2) - 40px);
+  }
+
+  body footer .footer-list {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body main .cards .card .contenuto-card .card-link {
+    flex-basis: calc((100%) - 40px);
+  }
+
+  body footer .footer-list {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 

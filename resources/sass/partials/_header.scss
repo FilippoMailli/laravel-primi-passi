@@ -1,13 +1,19 @@
 header {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background-color: #fff;
     text-align: center;
     .main-menu {
         list-style: none;
         li {
             display: inline-block;
+            padding: 20px 10px;
+            transition: background-color 0.3s;
             a {
                 color: $link_main_color;
+            }
+            &:hover {
+                background-color: $click_color;
+                cursor: pointer;
             }
         }
     }

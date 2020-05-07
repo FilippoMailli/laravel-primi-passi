@@ -1,0 +1,43 @@
+@media screen and (max-width: 992px) {
+    body {
+        main {
+            .cards {
+                .card {
+                    .contenuto-card {
+                        .card-link {
+                            flex-basis: calc((100% / 2) - 40px);
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer-list {
+                flex-direction: column;
+                margin-left: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        main {
+            .cards {
+                .card {
+                    .contenuto-card {
+                        .card-link {
+                            flex-basis: calc((100%) - 40px);
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer-list {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
