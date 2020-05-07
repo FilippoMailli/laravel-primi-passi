@@ -115,6 +115,57 @@ main .cards .card .contenuto-card .card-link .hover h3 {
   padding-bottom: 20px;
 }
 
+main .container-full {
+  color: #002d73;
+  padding: 100px 0;
+  background-color: #b7d9e3;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .container-full .disappear {
+  display: none;
+}
+
+main .container-full h1 {
+  text-align: center;
+}
+
+main .container-full .container-stretch {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .container-full .container-stretch img {
+  max-width: 100%;
+}
+
+main .container-full .descrizione-prodotto {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main .container-full .descrizione-prodotto p {
+  line-height: 200%;
+}
+
+main .container-full .arrow {
+  padding: 0 20px;
+}
+
+main .container-full .arrow i {
+  font-size: 100px;
+  color: #002d73;
+}
+
+main .container-full .right {
+  text-align: right;
+}
+
 /* FOOTER */
 
 footer {
