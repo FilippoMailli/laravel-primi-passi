@@ -2,7 +2,8 @@
 @php
     $cards = config('products');
     $carta = $cards[$id];
-    // dd($id);
+    $countArray = count($cards) - 1;
+    $intCount = (int)$id;
 @endphp
 
 @section('titolo')
@@ -17,7 +18,7 @@
 
     <div class="container-full">
         <div class="arrow {{($id == 0) ? "disappear" : ''}}">
-            <a href="{{route('prodotti.show' , $id - 1)}}"> <i class="fas fa-chevron-left"></i></a>
+            <a href="{{route('prodotti.show' , $indexCount - 1)}}"> <i class="fas fa-chevron-left"></i></a>
         </div>
         <div class="contenuto">
             <h1>{{$carta['titolo']}}</h1>
@@ -30,8 +31,8 @@
             </div>
         </div>
 
-        <div class="arrow right{{($id == count($cards) - 1) ? "disappear" : ''}}">
-            <a href="{{route('prodotti.show' , $id + 1)}}"> <i class="fas fa-chevron-right"></i></a>
+        <div class="arrow right {{($id == $countArray) ? "disappear" : ''}}">
+            <a href="{{route('prodotti.show' , $indexCount + 1)}}"> <i class="fas fa-chevron-right"></i></a>
         </div>
     </div>
 
