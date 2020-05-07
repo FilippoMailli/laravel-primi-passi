@@ -27,6 +27,8 @@
         @endphp
 
         <main>
+            <h1>QUESTA PAGINA E' SOLO UN TEST</h1>
+            <h4>APRI IL LINK</h4>
             <a href="{{route('home')}}">Home</a>
             {{-- QUESTO E' UN COMMENTO CHE NON VERRA' VISUALIZZATO --}}
             @foreach ($users as $user)
