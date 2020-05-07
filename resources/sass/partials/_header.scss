@@ -6,15 +6,16 @@ header {
         list-style: none;
         li {
             display: inline-block;
-            padding: 20px 10px;
-            transition: background-color 0.3s;
+            padding: 20px 0px;
             a {
                 color: $link_main_color;
+                padding: 20px 20px;
+                transition: background-color 0.3s;
             }
-            &:hover {
+            .active {
                 background-color: $click_color;
-                cursor: pointer;
             }
         }
+
     }
 }

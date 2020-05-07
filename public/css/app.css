@@ -39,17 +39,17 @@ header .main-menu {
 
 header .main-menu li {
   display: inline-block;
-  padding: 20px 10px;
-  transition: background-color 0.3s;
+  padding: 20px 0px;
 }
 
 header .main-menu li a {
   color: #000;
+  padding: 20px 20px;
+  transition: background-color 0.3s;
 }
 
-header .main-menu li:hover {
+header .main-menu li .active {
   background-color: #b2e5fc;
-  cursor: pointer;
 }
 
 /* MAIN */
@@ -122,7 +122,7 @@ footer {
 
 footer .footer-list {
   max-width: 1675px;
-  margin: 100px auto;
+  margin: 100px 7vw;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -156,7 +156,6 @@ footer img {
 
   body footer .footer-list {
     flex-direction: column;
-    margin-left: 100px;
   }
 }
 

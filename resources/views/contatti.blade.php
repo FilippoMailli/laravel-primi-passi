@@ -1,11 +1,11 @@
 @extends('layouts.layout')
 
 @section('css')
-    {{-- css home --}}
+    {{-- css contatti --}}
 @endsection
 
 @section('titolo')
-    La Molisana
+    Contatti
 @endsection
 
 @section('scripts')
