@@ -28,3 +28,9 @@ Route::get('/prodotti', function () {
 Route::get('/contatti', function () {
     return view('contatti');
 })->name('contatti');
+
+
+//admin
+Route::get('admin/products', function () {
+    return view('admin.products');
+})->name('admin.prodotti');

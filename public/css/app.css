@@ -55,8 +55,11 @@ header .main-menu li .active {
 /* MAIN */
 
 main {
-  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
   max-width: 100vw;
+}
+
+main .container.products {
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
 
 main .cards {
