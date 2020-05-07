@@ -1,0 +1,32 @@
+footer {
+    max-width: 100vw;
+    overflow-x: hidden;
+    color: $footer_color;
+    .footer-list {
+        max-width: 1675px;
+        margin: 100px auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        ul {
+            li:first-child {
+                font-size: 20px;
+                margin: 15px 0;
+            }
+            li {
+                margin-bottom: 5px;
+            }
+        }
+        .first-footer-list {
+            li {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+    img {
+        max-width: 100vw;
+        display: block;
+        margin: 0 auto;
+    }
+}

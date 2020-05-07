@@ -3,7 +3,7 @@
     <nav>
         <ul class="main-menu">
             <li>
-                <a href="#">Home</a>
+                <a href="{{route('home')}}">Home</a>
             </li>
             <li>
                 <a href="{{route('prodotti')}}">Prodotti</a>
