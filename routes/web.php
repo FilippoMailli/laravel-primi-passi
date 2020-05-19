@@ -13,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
-    return view('users.index');
-})->name('index');
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('home');
+// })->name('home');
+
+Route::get('/', 'ProductController@index')->name('home');
 
 Route::get('/prodotti', function () {
     return view('prodotti');
@@ -29,9 +28,11 @@ Route::get('/contatti', function () {
     return view('contatti');
 })->name('contatti');
 
-Route::get('/prodotti/{id}', function ($id) {
-    return view('prodotto', compact('id'));
-})->name('prodotti.show');
+// Route::get('/prodotti/{id}', function ($id) {
+//     return view('prodotto', compact('id'));
+// })->name('prodotti.show');
+
+Route::get('/prodotti/{id}', 'ProductController@show')->name('prodotti.show');
 
 
 

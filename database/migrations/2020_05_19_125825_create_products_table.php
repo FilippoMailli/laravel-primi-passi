@@ -18,11 +18,11 @@ class CreateProductsTable extends Migration
             $table->string('name', 50);
             $table->string('type', 50);
             $table->text('src');
-            $table->text('src-h');
-            $table->text('src-p');
+            $table->text('src_h');
+            $table->text('src_p');
             $table->tinyInteger('time');
-            $table->smallInteger('weight');
             $table->text('description');
+            $table->smallInteger('weight');
             $table->timestamps();
         });
     }
