@@ -18,7 +18,7 @@
 
     <div class="container-full">
         <div class="arrow {{($id == 0) ? "disappear" : ''}}">
-            <a href="{{route('prodotti.show' , $indexCount - 1)}}"> <i class="fas fa-chevron-left"></i></a>
+            <a href="{{route('prodotti.show' , $intCount - 1)}}"> <i class="fas fa-chevron-left"></i></a>
         </div>
         <div class="contenuto">
             <h1>{{$carta['titolo']}}</h1>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="arrow right {{($id == $countArray) ? "disappear" : ''}}">
-            <a href="{{route('prodotti.show' , $indexCount + 1)}}"> <i class="fas fa-chevron-right"></i></a>
+            <a href="{{route('prodotti.show' , $intCount + 1)}}"> <i class="fas fa-chevron-right"></i></a>
         </div>
     </div>
 
